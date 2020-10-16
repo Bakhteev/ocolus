@@ -6,4 +6,6 @@ export const navLinks = [ 'Women', 'Man', 'Children', 'Accessories', 'Blog', 'Co
 export const ul = document.createElement('ul')
 export let li = document.createElement('li')
 export const img  = document.createElement('img')
-
+export const span = document.createElement('span')
+export const div = document.createElement('div')
+export const cartPrice = ['$0.0', 'items']
