@@ -1,4 +1,5 @@
-import { dropDown, languages } from './const.js'
+import { languages } from './const.js'
+import dropDown from './styles/dropdown.js'
 
 for (let i = 0; i < 2; i++) {
     let dropDownItems = document.createElement('li')
