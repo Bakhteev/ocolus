@@ -10,6 +10,8 @@ const headerRow = document.createElement('div');
 headerRow.style.display = 'flex'
 headerRow.style.justifyContent = 'space-between'
 headerRow.style.alignItems = 'center'
+headerRow.style.maxHeight = '50px'
+
 
 header.appendChild(container)
 container.appendChild(headerRow)

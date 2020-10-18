@@ -1,6 +1,6 @@
 import { dropDown, span } from '../const.js'
 
-const arrow = span
+export const arrow = span
 
 dropDown.appendChild(span)
 arrow.innerHTML = '>'
@@ -21,9 +21,6 @@ dropDown.style.lineHeight = '30px'
 dropDown.style.fontFamily = 'Poppins'
 dropDown.style.textTransform = 'uppercase'
 dropDown.style.cursor = 'pointer'
-
-dropDown.addEventListener('click', function() {
-    
-})
+dropDown.style.maxWidth = '61px'
 
 export default dropDown
