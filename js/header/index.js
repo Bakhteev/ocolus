@@ -9,6 +9,7 @@ header.style.border = '1px solid #eeeeee'
 const headerRow = document.createElement('div');
 headerRow.style.display = 'flex'
 headerRow.style.justifyContent = 'space-between'
+headerRow.style.alignItems = 'center'
 
 header.appendChild(container)
 container.appendChild(headerRow)
