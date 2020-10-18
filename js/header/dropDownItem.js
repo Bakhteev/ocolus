@@ -1,8 +1,37 @@
-import { dropDown, languages } from './const.js'
+import { languages } from './const.js'
+import dropDown from './styles/dropdown.js'
+import { arrow } from './styles/dropDown.js'
 
-for (let i = 0; i < 2; i++) {
-    let dropDownItems = document.createElement('li')
+for (var i = 0; i < languages.length; i++) {
+    var dropDownItems = document.createElement('li')
     dropDownItems.style.textTransform = 'uppercase'
     dropDownItems.innerHTML = `${languages[i]}`
     dropDown.appendChild(dropDownItems)
+    if ( i > 0 ) {
+        dropDownItems.style.opacity = '0'
+    }
 }
+
+dropDownItems.style.transform = 'translateY(-30px)'
+
+dropDown.addEventListener('click', function () {
+    if (dropDown.className == 'is-active') {
+        dropDown.className = 'none'
+        arrow.style.transform = 'rotate(90deg)'
+        if ( i > 0 ) {
+            dropDownItems.style.opacity = '0'
+            dropDownItems.style.transform = 'translateY(-30px)'
+        }
+    }
+    else {
+        dropDownItems.style.opacity = '1'
+        dropDown.className = 'is-active'
+        dropDown.style.overflow = 'visible'
+        arrow.style.transform = 'rotate(-90deg)'
+        dropDownItems.style.transform = 'translateY(0px)'
+    }
+    arrow.style.transition = '0.3s linear'
+    dropDownItems.style.transition = '0.3s linear'
+})
+
+
