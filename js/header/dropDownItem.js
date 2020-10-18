@@ -7,27 +7,31 @@ for (var i = 0; i < languages.length; i++) {
     dropDownItems.style.textTransform = 'uppercase'
     dropDownItems.innerHTML = `${languages[i]}`
     dropDown.appendChild(dropDownItems)
-    if ( i > 0) {
-        dropDownItems.style.display = 'none'
+    if ( i > 0 ) {
+        dropDownItems.style.opacity = '0'
     }
 }
+
+dropDownItems.style.transform = 'translateY(-30px)'
 
 dropDown.addEventListener('click', function () {
     if (dropDown.className == 'is-active') {
         dropDown.className = 'none'
         arrow.style.transform = 'rotate(90deg)'
         if ( i > 0 ) {
-            dropDownItems.style.display = 'none'
+            dropDownItems.style.opacity = '0'
+            dropDownItems.style.transform = 'translateY(-30px)'
         }
     }
     else {
-        dropDownItems.style.display = 'block'
+        dropDownItems.style.opacity = '1'
         dropDown.className = 'is-active'
         dropDown.style.overflow = 'visible'
         arrow.style.transform = 'rotate(-90deg)'
+        dropDownItems.style.transform = 'translateY(0px)'
     }
-    dropDown.style.bottom = '0'
-    dropDown.style.display = 'block'
-    dropDown.style.backgroundColor = 'transparent'
     arrow.style.transition = '0.3s linear'
+    dropDownItems.style.transition = '0.3s linear'
 })
+
+
