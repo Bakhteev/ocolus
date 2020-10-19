@@ -13,6 +13,7 @@ for (var i = 0; i < languages.length; i++) {
 }
 
 dropDownItems.style.transform = 'translateY(-30px)'
+dropDownItems.style.backgroundColor = '#fff'
 
 dropDown.addEventListener('click', function () {
     if (dropDown.className == 'is-active') {
@@ -26,7 +27,7 @@ dropDown.addEventListener('click', function () {
     else {
         dropDownItems.style.opacity = '1'
         dropDown.className = 'is-active'
-        dropDown.style.overflow = 'visible'
+        dropDown.style.overflowY = 'visible'
         arrow.style.transform = 'rotate(-90deg)'
         dropDownItems.style.transform = 'translateY(0px)'
     }
