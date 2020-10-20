@@ -1,16 +1,16 @@
 export const imgWrapper = document.createElement('div')
 imgWrapper.style.padding = '0 40px'
-imgWrapper.style.margin = '300px 0 0 0'
+imgWrapper.style.margin = '150px 0 0 0'
 
 
-// for (let i = 0; i < 12; i++) {
-//     let img = document.createElement('img')
-//     imgWrapper.appendChild(img)
-//     img.src = `https://source.unsplash.com/collection/${i}/300x300`
-//     img.style.width = '25%'
-//     img.style.padding = '3px'
-//     img.style.boxSizing = 'border-box'
-// }
+for (let i = 0; i < 12; i++) {
+    let img = document.createElement('img')
+    imgWrapper.appendChild(img)
+    img.src = `https://source.unsplash.com/collection/${i}/300x300`
+    img.style.width = '25%'
+    img.style.padding = '3px'
+    img.style.boxSizing = 'border-box'
+}
 
 
 export const time = document.createElement('ul')
@@ -53,7 +53,7 @@ function countDown() {
 
     const totalSeconds = Math.floor(seconds % 60)
     const days = Math.floor(seconds / 3600 / 24)
-    const hours = Math.floor(seconds / 3600) % 60
+    const hours = Math.floor(seconds / 3600) % 24
     const minutes = Math.floor(seconds / 60) % 60
     daysHTML.innerHTML = `${days} days`
     hoursHTML.innerHTML = `${hours} hours`
