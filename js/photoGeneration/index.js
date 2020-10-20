@@ -30,10 +30,10 @@ daysHTML.style.margin = '0 10px'
 hoursHTML.style.margin = '0 10px'
 minutesHTML.style.margin = '0 10px'
 secondsHTML.style.margin = '0 10px'
-daysHTML.style.fontFamily = 'sans-serif'
-hoursHTML.style.fontFamily = 'sans-serif'
-minutesHTML.style.fontFamily = 'sans-serif'
-secondsHTML.style.fontFamily = 'sans-serif'
+daysHTML.style.fontFamily = 'Poppins'
+hoursHTML.style.fontFamily = 'Poppins'
+minutesHTML.style.fontFamily = 'Poppins'
+secondsHTML.style.fontFamily = 'Poppins'
 
 
 time.appendChild(daysHTML)
