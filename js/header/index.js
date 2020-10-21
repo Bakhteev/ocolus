@@ -3,20 +3,27 @@ import { dropDown, header } from './const.js'
 import './dropDownItem.js'
 import nav from './nav.js'
 import Cart from './cart.js'
-
-header.style.border = '1px solid #eeeeee'
+import burgerMenu from './burger.js'
 
 const headerRow = document.createElement('div');
+const headerBottom = document.createElement('div')
+
+headerRow.style.border = '1px solid #eeeeee'
+
+headerBottom.className = 'burger-bottom'
+
+
 headerRow.style.display = 'flex'
 headerRow.style.justifyContent = 'space-between'
 headerRow.style.alignItems = 'center'
 headerRow.style.maxHeight = '50px'
 
+header.appendChild(headerRow)
+header.appendChild(headerBottom)
+headerRow.appendChild(container)
+container.appendChild(dropDown)
+container.appendChild(nav)
+container.appendChild(Cart)
 
-header.appendChild(container)
-container.appendChild(headerRow)
-headerRow.appendChild(dropDown)
-headerRow.appendChild(nav)
-headerRow.appendChild(Cart)
 
 export default header
