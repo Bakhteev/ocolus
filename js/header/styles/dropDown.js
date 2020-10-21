@@ -1,4 +1,4 @@
-import { dropDown, span } from '../const.js'
+import { colorGray, dropDown, span} from '../const.js'
 
 export const arrow = span
 
@@ -13,7 +13,7 @@ dropDown.style.padding = '0 15px 0 0 '
 dropDown.style.position = 'relative'
 dropDown.style.height = '30px'
 dropDown.style.textDecoration = 'none'
-dropDown.style.color = '#7b7b7b'
+dropDown.style.color = colorGray
 dropDown.style.fontSize = '12px'
 dropDown.style.letterSpacing = '2px'
 dropDown.style.lineHeight = '30px'

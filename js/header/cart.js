@@ -1,4 +1,4 @@
-import { div, cartPrice } from './const.js'
+import { div, cartPrice, colorGray } from './const.js'
 
 const Cart = div
 Cart.className = 'cart'
@@ -12,7 +12,7 @@ for(let i = 0; i < 2; i++) {
     cartItem.style.height = '30px'
     cartItem.style.overflow = 'hidden'
     cartItem.style.textDecoration = 'none'
-    cartItem.style.color = '#7b7b7b'
+    cartItem.style.color = colorGray
     cartItem.style.fontSize = '12px'
     cartItem.style.letterSpacing = '2px'
     cartItem.style.lineHeight = '30px'

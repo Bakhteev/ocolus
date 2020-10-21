@@ -9,3 +9,4 @@ export const img  = document.createElement('img')
 export const span = document.createElement('span')
 export const div = document.createElement('div')
 export const cartPrice = ['$0.0', 'items']
+export const colorGray = '#7b7b7b'

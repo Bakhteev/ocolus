@@ -1,4 +1,4 @@
-import { nav, ul, navLinks, li} from './const.js'
+import { nav, ul, navLinks, colorGray} from './const.js'
 
 
 nav.appendChild(ul)
@@ -13,7 +13,7 @@ for (let i = 0; i < navLinks.length; i++) {
 	a.href = '#'
 	a.className = 'nav__links'
 	a.style.textDecoration = 'none'
-	a.style.color = '#7b7b7b'
+	a.style.color = colorGray
 	a.style.fontSize = '12px'
 	a.style.letterSpacing = '2px'
 	a.style.lineHeight = '30px'
