@@ -1,22 +1,38 @@
-import { container } from '../base.js'
-import { dropDown, header } from './const.js'
-import './dropDownItem.js'
-import nav from './nav.js'
-import Cart from './cart.js'
+import { container } from '../base.js';
+import { dropDown, header } from './const.js';
+import burgerMenu from './burgerMenu.js';
+import nav from './nav.js';
+import Cart from './cart.js';
+import logo from './logo.js';
+import searchIcon from './search.js'
+import './dropDownItem.js';
 
-header.style.border = '1px solid #eeeeee'
+console.log(logo);
 
 const headerRow = document.createElement('div');
-headerRow.style.display = 'flex'
-headerRow.style.justifyContent = 'space-between'
-headerRow.style.alignItems = 'center'
-headerRow.style.maxHeight = '50px'
+const headerBottom = document.createElement('div');
 
 
-header.appendChild(container)
-container.appendChild(headerRow)
-headerRow.appendChild(dropDown)
-headerRow.appendChild(nav)
-headerRow.appendChild(Cart)
+headerBottom.className = 'header-bottom';
 
-export default header
+headerRow.style.display = 'flex';
+headerRow.style.justifyContent = 'space-between';
+headerRow.style.alignItems = 'center';
+headerRow.style.maxHeight = '50px';
+
+header.className = 'header';
+
+header.appendChild(container);
+header.appendChild(headerRow);
+header.appendChild(headerBottom)
+container.appendChild(headerRow);
+container.appendChild(headerBottom)
+headerRow.appendChild(dropDown);
+headerRow.appendChild(nav);
+headerRow.appendChild(Cart);
+
+headerBottom.appendChild(burgerMenu)
+headerBottom.appendChild(logo)
+headerBottom.appendChild(searchIcon)
+
+export default header;
