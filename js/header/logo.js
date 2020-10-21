@@ -1,7 +1,7 @@
-const logo = document.createElement('div');
-const logoLink = document.createElement('a');
+const logo = document.createElement('div')
+const logoLink = document.createElement('a')
 
-logo.appendChild(logoLink);
+logo.appendChild(logoLink)
 
 logoLink.innerHTML = 
 `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 147 35" width="147" height="35">
@@ -15,4 +15,4 @@ logoLink.innerHTML =
 </svg>`;
 
 
-export default logo;
+export default logo
