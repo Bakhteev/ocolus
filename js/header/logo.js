@@ -12,7 +12,7 @@ logoLink.innerHTML =
 	tspan { white-space:pre }
 </style>
 <use id="Logo" href="#img1" transform="matrix(1,0,0,1,0,0)"/>
-</svg>`;
+</svg>`
 
 
 export default logo
