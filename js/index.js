@@ -1,6 +1,6 @@
-import header from './header/index.js'
-import { imgWrapper} from './photoGenerator/index.js'
-import overlay from './preloader/index.js'
+import header from './components/header/index.js'
+import { imgWrapper} from './components/photoGenerator/index.js'
+import overlay from './components/preloader/index.js'
 
 
 const root = document.getElementById('root')

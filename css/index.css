@@ -1,7 +1,3 @@
-body {
-  animation: overflow 7s linear forwards;
-}
-
 ::-webkit-scrollbar {
   opacity: 0;
   visibility: hidden;
