@@ -1,7 +1,7 @@
-const overlay = document.createElement('div')
+const overlay = document.createElement('div');
 
-overlay.className = 'preloader'
+overlay.className = 'preloader';
 
-overlay.innerHTML = `<h1>OCOLUS.</h1>`
+overlay.innerHTML = `<h1>OCOLUS<span>.</span></h1>`;
 
-export default overlay
+export default overlay;

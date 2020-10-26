@@ -1,8 +1,3 @@
-
-::-webkit-scrollbar{
-    opacity: 0;
-    visibility: hidden;
-}
 .preloader {
 	@include position(fixed, 0, 0);
 	@include flexbox;
@@ -13,20 +8,27 @@
 	animation: 1s overlay 2.5s linear forwards;
 	h1 {
 		@include font("Poppins", 72px, 700);
-		animation: 1s fs 0s ease-in-out forwards;
+		animation: 1s fontSize 0s ease-in-out forwards;
 	}
-}
-@keyframes overlay {
-	from {
-        opacity: 1;
-	}
-	to {
-        opacity: 0;
-        visibility: hidden;
+	span {
+		color: red;
 	}
 }
 
-@keyframes fs {
+@keyframes overlay {
+	from {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+	}
+	to {
+		opacity: 0;
+		visibility: hidden;
+	}
+}
+
+@keyframes fontSize {
 	from {
 		font-size: 372px;
 	}
@@ -34,4 +36,3 @@
 		font-size: 72px;
 	}
 }
-
